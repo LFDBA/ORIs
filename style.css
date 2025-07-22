@@ -1,0 +1,98 @@
+body {
+    padding: 0px;
+    justify-items: center;
+
+    /* Custom font */
+    font-family: undertale;
+
+    /* Text positioning */
+    text-align: center;
+
+    /* No Text select or image dragging */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+}
+
+.title-nav {
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0); /* Fully opaque */
+    transition: background-color;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.title {
+    font-size: 5vw;
+    font-weight: bold; 
+    text-align: center;
+    width: 100%;
+}
+
+
+.nav {
+    font-size: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.content div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3vw 0;
+}
+.content img {
+    width: 70%;
+    transition: width 0.4s;
+}
+.content img:hover {
+    width: 80%;
+}
+.content h1 {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0px;
+    margin: 0px;
+}
+.content h1:nth-child(even) {
+    padding-left: 50px;
+}
+.content h1:nth-child(odd) {
+    padding-right: 50px;
+}
+.content div:nth-child(even) {
+    display: flex;
+    flex-direction: row;
+}
+.content div:nth-child(odd) {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.content img:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.content img:nth-child(even) {
+    align-self: flex-end;
+}
+
+
+
+/* Importing Custom Font */
+@font-face {
+    font-family: undertale;
+    src: url(/font/Comfortaa-Regular.ttf);
+}
