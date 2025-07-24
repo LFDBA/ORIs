@@ -14,7 +14,6 @@ body {
 
 
     /* Text positioning */
-    text-align: center;
 
     /* No Text select or image dragging */
     -webkit-user-select: none; /* Safari */
@@ -57,7 +56,7 @@ body {
 }
 .content div {
     width: 100%;
-    height: calc(17vw + 12vh);
+    height: calc(20vw + 15vh);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -65,11 +64,10 @@ body {
 }
 .content img {
     margin: auto;
-    height: calc(15vw + 10vh);
-    transition: height 0.4s, transform 0.4s;
+    height: calc(18vw + 13vh);
 }
 .content img:hover {
-    height: calc(17vw + 12vh);
+    height: calc(20vw + 15vh);
     cursor: pointer;
 }
 .content h1 {
@@ -83,37 +81,31 @@ body {
 @media (max-width: 70vh) {
     .content h1:nth-child(even) {
         padding-left: 0px;
-        padding-top: 60px;
     }
     .content h1:nth-child(odd) {
-        padding-right: 0px;
-        /* PADDING NOT WORKING !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1 */
-        padding-top: 60px;
+        padding-right: 0px;        
     }
     .content div:nth-child(even) {
         display: flex;
         flex-direction: column-reverse;
+        padding-top: 60px;
     }
     .content div:nth-child(odd) {
         display: flex;
         flex-direction: column-reverse;
-    }
-    .content img:nth-child(odd) {
-        padding-left: 0px;
+        padding-top: 60px;
     }
 
-    .content img:nth-child(even) {
-        padding-right: 0px;
-    }
 
 }
 
 @media (min-width: 70vh){
-    .content div:nth-child(odd) h1 {
-        padding-right: 50px;
+    /* PADDING NO WORK ------------------------------------------------------------------------------------------------------------------------------------------- */
+    .content h1:nth-child(odd) h1 {
+        text-align: left;
     }
-    .content div:nth-child(even) h1 {
-        padding-left: 50px;
+    .content h1:nth-child(even) h1 {
+        text-align: right;
     }
     .content div:nth-child(even) {
         display: flex;

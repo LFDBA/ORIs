@@ -16,17 +16,6 @@
 
 <body>
 
-    <script>
-        window.addEventListener("scroll", function () {
-            let scrollTop = window.scrollY;
-            let opacity = Math.max(0, scrollTop / 300); // Adjust '300' to control transparency speed
-            document.querySelector(".title-nav").style.backgroundColor = `rgba(240, 248, 255, ${opacity})`;
-        });
-        function redirect() {
-            window.location.href = "https://adventurecollective.nz/Bata-Dandit-crackinator/index.html"
-        }
-    </script>
-
     <div class="title-nav">
         <div class="title">
             TITLE
@@ -41,71 +30,84 @@
     </div>
     <div class="content">
         <div>
+            <img src="images/rosecamp.webp" onclick='redirect()'>
+
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+        </div>
+        <div>
+            <img src="images/titanic.webp" onclick='redirect()'>
+
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+        </div>
+        <div>
+            <img src="images/teatime.webp" onclick='redirect()'>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+        </div>
+        <div>
+            <img src="images/block.webp" onclick='redirect()'>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+        </div>
+        <div>
+            <img src="images/windowcat.jpg" onclick='redirect()'>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+        </div>
+        <div>
             <img src="images/fence.webp" onclick='redirect()'>
-
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/snail.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/snailtrail.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/deer.webp" onclick='redirect()'>   
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/macbeth.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/clint.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/cosmactus.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
         <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
-        </div>
-        <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
-        </div>
-        <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
-        </div>
-        <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
-        </div>
-        <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
-        </div>
-        <div>
-            <img src="71N9bGfQSfL._AC_UF1000,1000_QL80_.jpg" onclick='redirect()'>
-
+            <img src="images/funguy.webp" onclick='redirect()'>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
         </div>
     </div>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.scrollY;
+            let opacity = Math.max(0, scrollTop / 300); // Adjust '300' to control transparency speed
+            document.querySelector(".title-nav").style.backgroundColor = `rgba(240, 248, 255, ${opacity})`;
+        });
+        function redirect() {
+            window.location.href = "https://adventurecollective.nz/Bata-Dandit-crackinator/index.html"
+        }
+
+        const images = document.querySelectorAll('.content img');
+
+        images.forEach(img => {
+            img.addEventListener('mouseenter', () => {
+                img.style.transition = "height 0.4s, transform 0.4s";
+                console.log("what")
+            });
+
+            window.addEventListener("resize", ()=>{
+                img.style.transition = ""
+            })
+        });
+    </script>
 </body>
 
 </html>
