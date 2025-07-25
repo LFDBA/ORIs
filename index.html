@@ -90,6 +90,8 @@
             let scrollTop = window.scrollY;
             let opacity = Math.max(0, scrollTop / 300); // Adjust '300' to control transparency speed
             document.querySelector(".nav").style.backgroundColor = `rgba(240, 248, 255, ${opacity})`;
+            document.querySelector(".nav").style.webkitBackdropFilter = `blur(${scrollTop/100}px)`;
+            document.querySelector(".nav").style.backdropFilter = `blur(${scrollTop/100}px)`;
         });
         function redirect() {
             window.location.href = "https://adventurecollective.nz/Bata-Dandit-crackinator/index.html"
