@@ -21,10 +21,18 @@
     <div class="nav">
         
         <div class="nav-elements">
-            <div>words</div>
-            <div>words</div>
-            <div>words</div>
-            <div>words</div>
+            <div id="dropdown">
+                <text>
+                    words
+                </text>
+                
+                <div class="drop">
+                    >
+                </div>
+            </div>
+            <div id="redirect">words</div>
+            <div id="redirect">words</div>
+            <div id="redirect">words</div>
         </div>
 
     </div>
@@ -32,56 +40,60 @@
         <div>
             <img src="images/rosecamp.webp" onclick='redirect()'>
 
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/titanic.webp" onclick='redirect()'>
 
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/teatime.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/block.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/windowcat.jpg" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/fence.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/snail.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/snailtrail.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/deer.webp" onclick='redirect()'>   
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/macbeth.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/clint.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/cosmactus.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
             <img src="images/funguy.webp" onclick='redirect()'>
-            <h1>THis is the starry sky. Its buy some like famous guy or smth. Fretty cool paint</h1>
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
+        </div>
+        <div>
+            <img src="images/batadandit.png" onclick="redirect('https://adventurecollective.nz/Bata-Dandit-crackinator/index.html')">
+            <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
     </div>
 
@@ -94,16 +106,50 @@
             document.querySelector(".nav").style.webkitBackdropFilter = `blur(${scrollTop/100}px)`;
             document.querySelector(".nav").style.backdropFilter = `blur(${scrollTop/100}px)`;
         });
-        function redirect() {
-            window.location.href = "https://adventurecollective.nz/Bata-Dandit-crackinator/index.html"
+        function redirect(location) {
+            window.location.href = location
         }
+
+        const drops = document.querySelectorAll('.nav-elements div .drop')
+        const navs = document.querySelectorAll('.nav-elements div')
+        let dropping = false;
+
+
+        drops.forEach(drop => {
+
+            drop.addEventListener('mouseenter', () => {
+                drop.style.scale = 1.1
+                
+            })
+            drop.addEventListener('mouseleave', () => {
+                drop.style.scale = 0.8;
+            })
+        })
+
+
+
+        navs.forEach(nav => {
+            nav.addEventListener('mouseenter', () => {
+                if(dropping == false && nav.querySelector(".drop")){
+                    nav.querySelector(".drop").style.scale = 0.8
+                    nav.querySelector(".drop").style.transform = "rotate(90deg)"
+                }
+                
+            })
+            nav.addEventListener('mouseleave', () => {
+                if(nav.querySelector(".drop")){
+                    nav.querySelector(".drop").style.scale = 0
+                    nav.querySelector(".drop").style.transform = "rotate(-90deg)"
+                }
+                
+            })
+        })
 
         const images = document.querySelectorAll('.content img');
 
         images.forEach(img => {
             img.addEventListener('mouseenter', () => {
-                img.style.transition = "height 0.4s, transform 0.4s";
-                console.log("what")
+                img.style.transition = "height 0.4s, transform 0.4s, border-color 0.4s";
             });
 
             window.addEventListener("resize", ()=>{
