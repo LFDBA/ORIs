@@ -38,8 +38,11 @@
     </div>
     <div class="content">
         <div>
-            <img src="images/rosecamp.webp" onclick='redirect()'>
-
+            <div id="imgContainer">
+                <img src="images/rosecamp.webp" onclick='redirect()'>
+                <h2>🖱️</h2> <!--🔎 -->
+                
+            </div>
             <h1>THis is the starry sky. Its buy some like famous guy or smth. <a href="https://adventurecollective.nz/Untitled.jpg">LINK</a> Fretty cool paint</h1>
         </div>
         <div>
@@ -98,6 +101,19 @@
     </div>
 
     <script>
+
+        const userAgent = navigator.userAgent;
+        const clickIcons = document.querySelectorAll("#imgContainer h2")
+        clickIcons.forEach(icon => {
+            if (/Mobi|Android/i.test(userAgent)) {
+                
+                icon.style = "text-shadow:3px 3px 10px rgb(0, 0, 0); position: absolute; top:5px; left: 20px; visibility: visible;"
+                
+            }else{
+                icon.style = "visibility: hidden;"
+                console.log("s")
+            }
+        })
         window.addEventListener("scroll", function () {
             let scrollTop = window.scrollY;
             let opacity = Math.max(0, scrollTop / 300); // Adjust '300' to control transparency speed
@@ -119,10 +135,15 @@
 
             drop.addEventListener('mouseenter', () => {
                 drop.style.scale = 1.1
+                drop.style.transform = "rotate(-90deg)"
                 
             })
             drop.addEventListener('mouseleave', () => {
                 drop.style.scale = 0.8;
+            })
+            drop.addEventListener('click', () => {
+                drop.style.scale = 0.8;
+                drop.style.transform = "rotate(90deg)"
             })
         })
 
@@ -131,18 +152,19 @@
         navs.forEach(nav => {
             nav.addEventListener('mouseenter', () => {
                 if(dropping == false && nav.querySelector(".drop")){
+                    nav.style.scale = "0.8";
                     nav.querySelector(".drop").style.scale = 0.8
                     nav.querySelector(".drop").style.transform = "rotate(90deg)"
                 }
                 
             })
-            nav.addEventListener('mouseleave', () => {
-                if(nav.querySelector(".drop")){
-                    nav.querySelector(".drop").style.scale = 0
-                    nav.querySelector(".drop").style.transform = "rotate(-90deg)"
-                }
+            // nav.addEventListener('mouseleave', () => {
+            //     if(nav.querySelector(".drop")){
+            //         nav.querySelector(".drop").style.scale = 0
+            //         nav.querySelector(".drop").style.transform = "rotate(-90deg)"
+            //     }
                 
-            })
+            // })
         })
 
         const images = document.querySelectorAll('.content img');

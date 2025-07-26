@@ -66,14 +66,16 @@ body {
     scale: 1.2;
 }
 
-.nav-elements #dropdown {
+#dropdown {
     transition: scale 0.4s;
 }
-.nav-elements #dropdown text{
+#dropdown text{
     padding-right: 10px;
 }
-.nav-elements #dropdown:hover {
-    scale: 0.8;
+
+
+#imgContainer {
+    position: relative;
 }
 
 .drop {
@@ -90,7 +92,7 @@ body {
     color: rgb(252 244 240);
     padding-top: 20px;
 }
-.content div {
+.content > div {
     width: 100%;
     height: calc(20vw + 15vh);
     display: flex;
@@ -105,6 +107,14 @@ body {
     height: calc(18vw + 13vh);
 }
 
+
+.content img:hover {
+    border-color: rgb(206, 198, 180);
+    height: calc(20vw + 15vh);
+    cursor: pointer;
+}
+
+
 a {
     display: inline-block;
     color: rgb(81, 81, 255);
@@ -114,11 +124,7 @@ a:hover {
     animation-iteration-count: infinite;
 }
 
-.content img:hover {
-    border-color: rgb(168 166 162);
-    height: calc(20vw + 15vh);
-    cursor: pointer;
-}
+
 .content h1 {
     font-size: 3vw; /* Base font size */
     font-weight: bold;
@@ -134,38 +140,37 @@ a:hover {
     .content h1:nth-child(odd) {
         padding-right: 0px;        
     }
-    .content div:nth-child(even) {
+    .content > div:nth-child(even) {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 60px;
+        padding-top: 200px;
     }
-    .content div:nth-child(odd) {
+    .content > div:nth-child(odd) {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 60px;
+        padding-top: 200px;
     }
 
 
 }
 
 @media (min-width: 70vh){
-    .content div:nth-child(odd) h1 {
+    .content > div:nth-child(odd) h1 {
         padding-right: 100px;
     }
-    .content div:nth-child(even) h1 {
+    .content > div:nth-child(even) h1 {
         padding-left: 100px;
     }
-    .content div:nth-child(even) {
+    .content > div:nth-child(even) {
         display: flex;
         flex-direction: row;
     }
-    .content div:nth-child(odd) {
+    .content > div:nth-child(odd) {
         display: flex;
         flex-direction: row-reverse;
     }
  
 }
-
 
 
 
