@@ -143,12 +143,12 @@ a:hover {
     .content > div:nth-child(even) {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 20px;
+        padding-top: 100px;
     }
     .content > div:nth-child(odd) {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 20px;
+        padding-top: 100px;
     }
 
 
