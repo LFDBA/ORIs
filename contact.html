@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <script type="text/javascript" src="scripts/script.js" defer></script>
 </head>
 
@@ -19,77 +20,93 @@
     
     <div class="cursor"></div>
 
-    <div class="title">
-        TITLE
-    </div>
+    
     <img class="settings" src="images/settings.png" onclick="redirect('settings.html')"></img>
-    <div class="nav">
-        
-        <div class="nav-elements">
-            
-            <div id="redirect" onclick="redirect('index.html')">home</div>
-            <div id="dropdown">
-                <text>
-                    projects
-                    <div class="drop">
-                        >
-                    </div>
-                </text>
-                
-                
-                <table id="list">
-                    <tr>
-                        <th onclick="redirect('projects/pokemon.html')">
-                            Pokemon
-                        </th>
-                    </tr>
-                    <tr>
-                        <th onclick="redirect('projects/batadandit.html')">
-                            Bata Dandit
-                        </th>
-                    </tr>
-                    <tr>
-                        <th onclick="redirect('projects/undertale.html')">
-                            Undertale
-                        </th>
-                    </tr>
-                </table>
-            </div>
-            <div id="dropdown">
-                <text>
-                    collections
-                    <div class="drop">
-                        >
-                    </div>
-                </text>
-                
-                
-                <table id="list">
-                    <tr>
-                        <th onclick="redirect('collections/peace.html')">
-                            peace
-                        </th>
-                    </tr>
-                    <tr>
-                        <th onclick="redirect('collections/liminal.html')">
-                            liminal
-                        </th>
-                    </tr>
-                    <tr>
-                        <th onclick="redirect('collections/nature.html')">
-                            nature
-                        </th>
-                    </tr>
-                    <tr>
-                        <th onclick="redirect('collections/spooks.html')">
-                            spooks
-                        </th>
-                    </tr>
-                </table>
-            </div>
-            <div id="redirect" onclick="redirect('about.html')">about</div>
-            <div class="home">&nbsp;contact&nbsp;</div>
+    <div class="nav-cont">
+        <div class="title">
+            TITLE
         </div>
-        
+        <div class="nav">
+            
+            <div class="nav-elements">
+                
+                <div id="redirect" onclick="redirect('index.html')">home</div>
+                <div id="dropdown">
+                    <text>
+                        projects
+                        <div class="drop">
+                            >
+                        </div>
+                    </text>
+                    
+                    
+                    <table id="list">
+                        <tr>
+                            <th onclick="redirect('projects/pokemon.html')">
+                                Pokemon
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="redirect('projects/batadandit.html')">
+                                Bata Dandit
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="redirect('projects/undertale.html')">
+                                Undertale
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="dropdown">
+                    <text>
+                        collections
+                        <div class="drop">
+                            >
+                        </div>
+                    </text>
+                    
+                    
+                    <table id="list">
+                        <tr>
+                            <th onclick="redirect('collections/peace.html')">
+                                peace
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="redirect('collections/liminal.html')">
+                                liminal
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="redirect('collections/nature.html')">
+                                nature
+                            </th>
+                        </tr>
+                        <tr>
+                            <th onclick="redirect('collections/spooks.html')">
+                                spooks
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="redirect" onclick="redirect('about.html')">about</div>
+                <div class="home">&nbsp;contact&nbsp;</div>
+            </div>
+            
+        </div>
+
+        <div class="content">
+            <textarea class="message" placeholder="Message for ORI..."></textarea>
+            <div class="buttons">
+                <div id="button">clear</div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div id="button" onclick="">send</div>
+            </div>
+        </div>
     </div>
 </body>
