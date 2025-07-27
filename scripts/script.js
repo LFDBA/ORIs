@@ -6,7 +6,7 @@ const clickIcons = document.querySelectorAll(".imgContainer h2")
 clickIcons.forEach(icon => {
     if (/Mobi|Android/i.test(userAgent)) {
         
-        icon.style = "text-shadow:3px 3px 10px rgb(0, 0, 0); position: absolute; top:5px; left: 20px; visibility: visible;"
+        icon.style = "text-shadow:1px 1px 10px rgb(0, 0, 0); position: absolute; top:10px; left: 20px; visibility: visible; font-size: 2vw;"
         navs.forEach(nav => {
             if(dropping == false && nav.querySelector(".drop")){
                 nav.querySelector(".drop").style.scale = 0.8

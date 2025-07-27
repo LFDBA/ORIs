@@ -90,8 +90,8 @@ body {
   width: 100px;
   height: 100px;
   z-index: 2;
-  -webkit-backdrop-filter: blur(0.6px);
-  backdrop-filter: blur(0.6px);
+  -webkit-backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.5px);
   background-color: rgba(168, 166, 162, 0.06);
   box-shadow: 0px 0px 100px 5px rgba(168, 166, 162, 0.2);
   border-radius: 50%; /* For a circular cursor */
@@ -144,7 +144,7 @@ body {
   text-align: center;
   background: linear-gradient(rgba(31, 30, 30, 0), rgb(31, 30, 30));
   max-height: 0px;
-  overflow-y: auto;
+  overflow-y:hidden;
   transition: max-height 0.8s;
 }
 
@@ -176,99 +176,4 @@ a {
 a:hover {
   animation: shake 0.5s; 
   animation-iteration-count: infinite;
-}
-
-
-
-/* Shake Animation */
-@keyframes shake {
-  0% {
-    transform: translate(0.4px, 0.4px) rotate(0deg);
-  }
-
-  10% {
-    transform: translate(-0.4px, -0.8px) rotate(-0.4deg);
-  }
-
-  20% {
-    transform: translate(-0.12px, 0px) rotate(0.4deg);
-  }
-
-  30% {
-    transform: translate(0.12px, 0.8px) rotate(0deg);
-  }
-
-  40% {
-    transform: translate(0.4px, -0.4px) rotate(0.4deg);
-  }
-
-  50% {
-    transform: translate(-0.4px, 0.8px) rotate(-0.4deg);
-  }
-
-  60% {
-    transform: translate(-0.12px, 0.4px) rotate(0deg);
-  }
-
-  70% {
-    transform: translate(0.12px, 0.4px) rotate(-0.4deg);
-  }
-
-  80% {
-    transform: translate(-0.4px, -0.4px) rotate(0.4deg);
-  }
-
-  90% {
-    transform: translate(0.4px, 0.8px) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(0.4px, -0.8px) rotate(-0.4deg);
-  }
-}
-
-@-webkit-keyframes shake {
-  0% {
-    transform: translate(0.4px, 0.4px) rotate(0deg);
-  }
-
-  10% {
-    transform: translate(-0.4px, -0.8px) rotate(-0.4deg);
-  }
-
-  20% {
-    transform: translate(-0.12px, 0px) rotate(0.4deg);
-  }
-
-  30% {
-    transform: translate(0.12px, 0.8px) rotate(0deg);
-  }
-
-  40% {
-    transform: translate(0.4px, -0.4px) rotate(0.4deg);
-  }
-
-  50% {
-    transform: translate(-0.4px, 0.8px) rotate(-0.4deg);
-  }
-
-  60% {
-    transform: translate(-0.12px, 0.4px) rotate(0deg);
-  }
-
-  70% {
-    transform: translate(0.12px, 0.4px) rotate(-0.4deg);
-  }
-
-  80% {
-    transform: translate(-0.4px, -0.4px) rotate(0.4deg);
-  }
-
-  90% {
-    transform: translate(0.4px, 0.8px) rotate(0deg);
-  }
-
-  100% {
-    transform: translate(0.4px, -0.8px) rotate(-0.4deg);
-  }
 }
