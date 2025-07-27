@@ -26,7 +26,7 @@ body {
     background-color: rgb(45, 44, 44);
 }
 .title {
-    padding-top: 60px;
+    padding-top: 2vw;
     font-size: 5vw;
     font-weight: bold; 
     text-align: center;
@@ -57,13 +57,35 @@ body {
     flex-direction: row;
     justify-content: space-around;
     color: rgb(168 166 162);
+    text-shadow: rgb(168 166 162);
+    
+}
+
+.cursor {
+  position: fixed; /* Essential for following the mouse across the viewport */
+  top: 0;
+  left: 0;
+  pointer-events: none; /* Crucial: Ensures your custom cursor doesn't block clicks on elements underneath it */
+  width: 100px;
+  height: 100px;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.5px);
+  background-color: rgba(168, 166, 162, 0.06);
+  box-shadow: 0px 0px 100px 5px rgba(168, 166, 162, 0.2);
+  border-radius: 50%; /* For a circular cursor */
+
+
+}
+
+.nav-elements > div:hover{
+  color: rgba(246, 244, 240, 0.823);
+  text-shadow: 0px 0px 100px rgba(81, 81, 255, 0.4);
 }
 .nav-elements > div {
     display: flex;
     align-items: center;
-}
-.nav-elements #redirect {
-    transition: scale 0.4s;
+    transition: scale 0.4s, text-shadow 0.4s, color 0.4s;
 }
 .nav-elements #redirect:hover {
     scale: 1.2;
@@ -85,7 +107,7 @@ body {
     display: flex;
     position: absolute;
     overflow: hidden;
-    color: rgb(246 244 240);
+    color: rgba(246, 244, 240, 0.692);
     border-collapse: collapse;
     width: 115%;
     border-radius: 0px 0px 1vw 1vw;
@@ -107,7 +129,7 @@ tr:last-child{
 }
 
 th {
-    text-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 2px black;
     font-weight: bold;
     width: 1000px;
     transition: scale 0.4s;
@@ -182,25 +204,25 @@ a:hover {
 }
 
 @media (max-width: 70vh) {
+    .content {
+        display: flex;
+    }
     .content h1:nth-child(even) {
         padding-left: 0px;
     }
     .content h1:nth-child(odd) {
         padding-right: 0px;        
     }
-    .content > div:nth-child(even) {
+    .content > div{
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 100px;
+        height: auto;
+        padding: 0 0;
+        margin-bottom: -1vh;
     }
-    .content > div:nth-child(odd) {
-        display: flex;
-        flex-direction: column-reverse;
-        padding-top: 100px;
-    }
-
+    
     .content > div:first-child {
-        padding-top: 0px;
+        padding-top: 6vw;
     }
 }
 
