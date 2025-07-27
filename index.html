@@ -11,9 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/style.css">
-    <script type="text/javascript" src="script.js" defer></script>
-    
+    <link rel="stylesheet" href="styles/home.css">
+    <link class="portrait" rel="stylesheet" media="(max-width: 70vh)" href="styles/portrait.css">
+    <script type="text/javascript" src="scripts/script.js" defer></script>
 </head>
 
 <body>
@@ -23,11 +23,12 @@
     <div class="title">
         TITLE
     </div>
+    <img class="settings" src="images/settings.png" onclick="redirect('settings.html')"></img>
     <div class="nav">
         
         <div class="nav-elements">
             
-            <div style="text-decoration:line-through; text-decoration-color: rgb(215, 106, 106); text-decoration-thickness: 5px; text-shadow: 0px 0px 0px #00000000 !important; color: rgb(168 166 162);">&nbsp;home&nbsp;</div>
+            <div class="home">&nbsp;home&nbsp;</div>
             <div id="dropdown">
                 <text>
                     projects
@@ -39,17 +40,17 @@
                 
                 <table id="list">
                     <tr>
-                        <th>
+                        <th onclick="redirect('projects/pokemon.html')">
                             Pokemon
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <th onclick="redirect('projects/batadandit.html')">
                             Bata Dandit
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <th onclick="redirect('projects/undertale.html')">
                             Undertale
                         </th>
                     </tr>
@@ -66,31 +67,31 @@
                 
                 <table id="list">
                     <tr>
-                        <th>
+                        <th onclick="redirect('collections/peace.html')">
                             peace
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <th onclick="redirect('collections/liminal.html')">
                             liminal
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <th onclick="redirect('collections/nature.html')">
                             nature
                         </th>
                     </tr>
                     <tr>
-                        <th>
+                        <th onclick="redirect('collections/spooks.html')">
                             spooks
                         </th>
                     </tr>
                 </table>
             </div>
-            <div id="redirect" onclick="">about</div>
-            <div id="redirect">contact</div>
+            <div id="redirect" onclick="redirect('about.html')">about</div>
+            <div id="redirect" onclick="redirect('contact.html')">contact</div>
         </div>
-
+        
     </div>
     <div class="content">
         <div>

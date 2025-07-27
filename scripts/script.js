@@ -131,11 +131,11 @@ navs.forEach(nav => {
 })
 
 const images = document.querySelectorAll('.content img');
-
 images.forEach(img => {
     img.addEventListener('mouseenter', () => {
         img.style.transition = "height 0.4s, transform 0.4s, border-color 0.4s";
     });
+
 
     window.addEventListener("resize", ()=>{
         img.style.transition = ""
@@ -156,6 +156,8 @@ document.addEventListener('mousemove', (e) => {
     targetY = e.clientY;
 });
 
+let maxWidth = 600
+const elements = document.querySelectorAll('.content > div');
 function animate() {
     // Interpolate current position towards target position
     // (target - current) gives the distance to cover
@@ -166,6 +168,22 @@ function animate() {
     // Update the position of the div based on the interpolated coordinates
     // Subtract half of the div's width/height to center it on the cursor
     follower.style.transform = `translate(${currentX - (follower.offsetWidth / 2)}px, ${currentY - (follower.offsetHeight / 2)}px)`;
+
+
+    elements.forEach(element => {
+        if (element.scrollHeight > element.clientHeight || element.scrollWidth > element.clientWidth) {
+
+            const portraitLink = document.querySelector('link.portrait');
+            if (portraitLink) {
+                portraitLink.media = '(max-width: 600px)';
+            
+            }
+
+            console.log("bawls")
+        
+        } 
+    })
+    
 
     requestAnimationFrame(animate); // Keep the animation loop going
 }
