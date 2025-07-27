@@ -14,98 +14,99 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/contact.css">
     <script type="text/javascript" src="scripts/script.js" defer></script>
+    <script type="text/javascript" src="scripts/contact.js"></script>
 </head>
 
 <body>
     
-    <div class="cursor"></div>
+    <div id="cursor"></div>
 
     
-    <img class="settings" src="images/settings.png" onclick="redirect('settings.html')"></img>
-    <div class="nav-cont">
-        <div class="title">
+    <img id="settings" src="images/settings.png" onclick="redirect('settings.html')"></img>
+    <div id="nav-cont">
+        <div id="title">
             TITLE
         </div>
-        <div class="nav">
+        <div id="nav">
+        
+        <div id="nav-elements">
             
-            <div class="nav-elements">
+            <div class="redirect" onclick="redirect('index.html')">home</div>
+            <div class="dropdown">
+                <text>
+                    projects
+                    <div class="drop">
+                        >
+                    </div>
+                </text>
                 
-                <div id="redirect" onclick="redirect('index.html')">home</div>
-                <div id="dropdown">
-                    <text>
-                        projects
-                        <div class="drop">
-                            >
-                        </div>
-                    </text>
-                    
-                    
-                    <table id="list">
-                        <tr>
-                            <th onclick="redirect('projects/pokemon.html')">
-                                Pokemon
-                            </th>
-                        </tr>
-                        <tr>
-                            <th onclick="redirect('projects/batadandit.html')">
-                                Bata Dandit
-                            </th>
-                        </tr>
-                        <tr>
-                            <th onclick="redirect('projects/undertale.html')">
-                                Undertale
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-                <div id="dropdown">
-                    <text>
-                        collections
-                        <div class="drop">
-                            >
-                        </div>
-                    </text>
-                    
-                    
-                    <table id="list">
-                        <tr>
-                            <th onclick="redirect('collections/peace.html')">
-                                peace
-                            </th>
-                        </tr>
-                        <tr>
-                            <th onclick="redirect('collections/liminal.html')">
-                                liminal
-                            </th>
-                        </tr>
-                        <tr>
-                            <th onclick="redirect('collections/nature.html')">
-                                nature
-                            </th>
-                        </tr>
-                        <tr>
-                            <th onclick="redirect('collections/spooks.html')">
-                                spooks
-                            </th>
-                        </tr>
-                    </table>
-                </div>
-                <div id="redirect" onclick="redirect('about.html')">about</div>
-                <div class="home">&nbsp;contact&nbsp;</div>
+                
+                <table class="list">
+                    <tr>
+                        <th onclick="redirect('projects/pokemon.html')">
+                            Pokemon
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('projects/batadandit.html')">
+                            Bata Dandit
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('projects/undertale.html')">
+                            Undertale
+                        </th>
+                    </tr>
+                </table>
             </div>
-            
+            <div class="dropdown">
+                <text>
+                    collections
+                    <div class="drop">
+                        >
+                    </div>
+                </text>
+                
+                
+                <table class="list">
+                    <tr>
+                        <th onclick="redirect('collections/peace.html')">
+                            peace
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/liminal.html')">
+                            liminal
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/nature.html')">
+                            nature
+                        </th>
+                    </tr>
+                    <tr>
+                        <th onclick="redirect('collections/spooks.html')">
+                            spooks
+                        </th>
+                    </tr>
+                </table>
+            </div>
+            <div class="redirect" onclick="redirect('about.html')">about</div>
+            <div id="home">&nbsp;contact&nbsp;</div>
+        </div>
+        
         </div>
 
-        <div class="content">
-            <textarea class="message" placeholder="Message for ORI..."></textarea>
-            <div class="buttons">
-                <div id="button">clear</div>
+        <div id="content">
+            <textarea id="message" placeholder="Message for ORI..."></textarea>
+            <div id="buttons">
+                <div class="button" onclick='document.querySelector("#message").value = ""'>clear</div>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
                 <div></div>
-                <div id="button" onclick="">send</div>
+                <div class="button">send</div>
             </div>
         </div>
     </div>

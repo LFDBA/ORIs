@@ -5,14 +5,14 @@ html, body {
     padding: 0;
 }
 
-.nav-cont {
+#nav-cont {
     display: flex;
     flex-direction: column;
     height: 100%;
     justify-content: center;
 }
 
-.content {
+#content {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +32,7 @@ html, body {
     box-sizing: border-box;
 }
 
-.message {
+#message {
     color: rgb(246 244 240);
     resize: none;
     font-size: 30px;
@@ -48,7 +48,7 @@ html, body {
     caret-color:rgba(250, 235, 215, 0.522);
 }
 
-.buttons {
+#buttons {
     width: 100%;
     color: rgb(246 244 240);
     font-size: 2vw; /* This applies to text directly inside .buttons or its children without own font-size */
@@ -74,7 +74,7 @@ html, body {
     
 }
 
-#button {
+.button {
     display: flex;
     align-items: center; /* Centers content *inside* #button */
     transition: scale 0.4s, text-shadow 0.4s, color 0.4s;
@@ -86,7 +86,7 @@ html, body {
     text-shadow: 0px 0px 50px black, 0px 0px 100px black;
 }
 
-#button:hover {
+.button:hover {
     color: rgba(246, 244, 240, 0.823);
     text-shadow: 0px 0px 100px rgba(81, 81, 255, 0.4);
     scale: 1.05;
