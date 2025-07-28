@@ -1,6 +1,5 @@
 const navs = document.querySelectorAll('#nav-elements div')
 const lists = document.querySelectorAll(".list")
-let dropping = false;
 const userAgent = navigator.userAgent;
 const clickIcons = document.querySelectorAll(".imgContainer h2")
 clickIcons.forEach(icon => {
@@ -8,7 +7,7 @@ clickIcons.forEach(icon => {
         
         icon.style = "text-shadow:1px 1px 10px rgb(0, 0, 0); position: absolute; top:10px; left: 20px; visibility: visible; font-size: 2vw;"
         navs.forEach(nav => {
-            if(dropping == false && nav.querySelector(".drop")){
+            if(nav.querySelector(".drop")){
                 nav.querySelector(".drop").style.scale = 0.8
                 nav.querySelector(".drop").style.transform = "rotate(90deg)"
             }
@@ -28,7 +27,6 @@ window.addEventListener("scroll", function () {
             nav.querySelector(".drop").style.transform = "rotate(90deg)"
         }
     })
-    dropping = false;
     if(opacity < 1){
         document.querySelector("#nav").style.backgroundColor = `rgba(31, 30, 30, ${opacity})`;
         document.querySelector("#title").style.backgroundColor = `rgba(31, 30, 30, ${opacity})`;
@@ -74,14 +72,10 @@ navs.forEach(nav => {
                 let list = nav.querySelector(".list")
                 list.style.display = "flex";
                 list.style.maxHeight = "500px";
-                list.addEventListener('mouseenter', () => {
-                    dropping = true;
-                })
                 list.addEventListener('mouseleave', () => {
                     drop.style.scale = 0.8;
                     drop.style.transform = "rotate(90deg)"
                     list.style.maxHeight = "0px";
-                    dropping = false
                 })
 
             }
@@ -94,7 +88,7 @@ navs.forEach(nav => {
 
 navs.forEach(nav => {
     nav.addEventListener('mouseenter', () => {
-        if(dropping == false && nav.querySelector(".drop")){
+        if(nav.querySelector(".drop")){
             nav.querySelector("text").style.scale = 0.8;
             nav.querySelector(".drop").style.scale = 0.8
             nav.querySelector(".drop").style.transform = "rotate(90deg)"
@@ -102,7 +96,7 @@ navs.forEach(nav => {
         
     })
     nav.addEventListener('mouseleave', () => {
-        if(dropping == false && nav.querySelector(".drop")){
+        if(nav.querySelector(".drop")){
             nav.querySelector(".drop").style.scale = 0
             nav.querySelector(".drop").style.transform = "rotate(-90deg)"
             if(nav.querySelector(".list")){
@@ -113,6 +107,7 @@ navs.forEach(nav => {
         }
         
     })
+    let dropping = false
     nav.addEventListener('click', () => {
         if(nav.querySelector(".list") && dropping == false){
             
@@ -125,7 +120,7 @@ navs.forEach(nav => {
             nav.querySelector(".list").style.maxHeight = "0px";
             nav.querySelector(".drop").style.scale = 0.8
             nav.querySelector(".drop").style.transform = "rotate(90deg)"
-            dropping = false;
+            dropping = false
         }
     })
 })
