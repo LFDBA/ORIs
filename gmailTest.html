@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Form</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "NpOWP1Pd7xuAROC_e",
+            });
+        })();
+        window.onload = function() {
+            document.getElementById('send-button').addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default button behavior (if it were a submit button in a form)
+
+                const userMessage = document.getElementById('user-message').value;
+
+                // Define your template parameters
+                const templateParams = {
+                    name: "ORI CUSTOMER",
+                    email: "scratchpoodle1679@gmail.com",
+                    title: "New Contact (ORI CUSTOMER)",
+                    message: userMessage,
+                    time: new Date().toLocaleString(), // Example: dynamically add current time
+                };
+
+                // Send the email using emailjs.send()
+                emailjs.send('service_gnumicv', 'template_e288cm9', templateParams)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                        alert('Your message has been sent!');
+                        // Optionally clear the fields
+                        document.getElementById('user-name').value = '';
+                        document.getElementById('user-email').value = '';
+                        document.getElementById('user-subject').value = '';
+                        document.getElementById('user-message').value = '';
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                        alert('Failed to send message. Please try again later.');
+                    });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div>
+
+        <label for="user-message">Message</label>
+        <textarea id="user-message" rows="10" cols="50" required></textarea><br><br>
+
+        <button id="send-button">Send</button>
+    </div>
+</body>
+</html>
