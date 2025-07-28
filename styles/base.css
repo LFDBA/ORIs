@@ -159,14 +159,20 @@ tr:last-child{
 }
 
 th {
-  text-shadow: 0px 0px 2px black;
-  font-weight: bold;
-  width: 1000px;
-  transition: scale 0.4s;
-  scale: 0.6;
+    font-size: 1.3vw;
+    padding: 0.3vw;
+    text-shadow: 0px 0px 2px black;
+    font-weight: bold;
+    width: 1000px;
+    transition: scale 0.4s;
+    scale: 1;
 }
 th:hover {
-  scale: 0.75;
+    scale: 1.15;
+}
+
+#home {
+    scale: 1 !important;
 }
 
 a {

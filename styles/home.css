@@ -5,7 +5,6 @@
   align-content: center;
 }
 
-
 #content {
   margin: auto;
   width: 90%;
@@ -34,7 +33,7 @@
 
 #content img:hover {
   border-color: rgb(206 198 180);
-  height: calc(20vw + 15vh);
+  scale: 1.1;
   cursor: pointer;
 }
 
@@ -47,10 +46,6 @@
   background: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.08));
   box-shadow: 0px 0px 100px 100px rgba(0, 0, 0, 0.1);
 }
-
-
-
-
 
 @media (min-width: 70vh ){
   #content > div:nth-child(odd) h1 {
