@@ -49,6 +49,10 @@ html, body {
     caret-color:rgba(250, 235, 215, 0.522);
 }
 
+#space {
+    width: 40%;
+}
+
 #buttons {
     width: 100%;
     color: rgb(246 244 240);
