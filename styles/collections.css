@@ -9,26 +9,32 @@ html, body {
 #nav-cont {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: 100%;
-    width: 100%;
-    justify-content: center;
 }
 
 #title {
-    padding-top: 0px !important;
+    padding-top: 30px !important;
+}
+
+#content-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #content {
     display: grid;
     grid-template-columns: auto auto;
-    margin-top: 60px;
-    margin-bottom: 3vw; /* This margin controls spacing of .content from its parent's bottom */
-    padding: 50px;
+    padding: 20px;
+    margin: 30px;
+    
 
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    height: max-content;
+    height: min-content;
 
     box-sizing: border-box;
 
@@ -44,7 +50,7 @@ html, body {
 }
 
 #content img {
-    height: 28vh;
+    height: 27vh;
     border: 12px #595959 solid;
     border-radius: 15px;
     margin: auto;
