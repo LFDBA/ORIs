@@ -5,7 +5,7 @@ const clickIcons = document.querySelectorAll(".imgContainer h2")
 clickIcons.forEach(icon => {
     if (/Mobi|Android/i.test(userAgent)) {
         
-        icon.style = "text-shadow:1px 1px 10px rgb(0, 0, 0); position: absolute; top:10px; left: 20px; visibility: visible; font-size: 2vw;"
+        icon.style = "text-shadow:1px 1px 10px rgb(0, 0, 0); position: absolute; top:5px; left: 20px; visibility: visible; font-size: 2vh;"
         navs.forEach(nav => {
             if(nav.querySelector(".drop")){
                 nav.querySelector(".drop").style.scale = 0.8
@@ -128,7 +128,7 @@ navs.forEach(nav => {
 const images = document.querySelectorAll('#content img');
 images.forEach(img => {
     img.addEventListener('mouseenter', () => {
-        img.style.transition = "height 0.4s, transform 0.4s, border-color 0.4s";
+        img.style.transition = "scale 0.4s, transform 0.4s, border-color 0.4s";
     });
 
 
