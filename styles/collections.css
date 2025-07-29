@@ -28,7 +28,7 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: auto;
-    height: min-content;
+    height: max-content;
 
     box-sizing: border-box;
 
@@ -84,7 +84,7 @@ html, body {
 
 @media (max-width: 900px){
     #content {
-        width: 90% !important;
+        width: 100% !important;
         margin-top: 25%;
     }
     #content img {
@@ -109,6 +109,6 @@ html, body {
         left: 80% !important;
     }
     #nav-elements {
-        width: 80% !important;
+        width: 10% !important;
     }
 }
