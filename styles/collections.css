@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
     min-height: 100px;
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ html, body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    width: 100%;
 }
 
 #title {
