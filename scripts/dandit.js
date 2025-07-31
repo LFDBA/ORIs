@@ -2,7 +2,7 @@ const navs = document.querySelectorAll('#nav-elements div')
 const lists = document.querySelectorAll(".list")
 const userAgent = navigator.userAgent;
 const clickIcons = document.querySelectorAll(".imgContainer h2")
-const 
+// const 
 
 clickIcons.forEach(icon => {
     if (/Mobi|Android/i.test(userAgent)) {

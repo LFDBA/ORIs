@@ -41,24 +41,27 @@ body {
   flex-direction: row;
   justify-content: space-around;
   color: rgb(0, 0, 0);
-    
+  
 }
 
 .drop-container {
-    display: flex;
-    justify-content: left;
-}
+  display: flex;
+  justify-content: left;
+} 
 
-.dropdown:hover{
-  color: rgba(44, 44, 44, 0.823);
-}
 .dropdown {
   display: flex;
   align-items: center;
+  border-radius: 1vw 1vw 0px 0px;
   transition: scale 0.4s, color 0.4s;
   
 }
-#nav-elements .redirect:hover {
+
+
+.redirect {
+  transition: scale 0.4s;
+}
+.redirect:hover {
   scale: 1.2;
 }
 
@@ -90,7 +93,7 @@ body {
   color: rgba(0, 0, 0, 0.692);
   border-collapse: collapse;
   width: 115%;
-  border-radius: 0px 0px 1vw 1vw;
+  border-radius: 0px 1vw 1vw 1vw;
   top: 100%;
   justify-content: center;
   text-align: center;
