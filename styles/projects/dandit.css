@@ -35,7 +35,7 @@ body {
 
 
 #nav-elements {
-  width: 70%;
+  width: 90%;
   font-size: 3vw;
   display: flex;
   flex-direction: row;
@@ -44,13 +44,14 @@ body {
     
 }
 
-#nav-elements > div:hover{
+.dropdown:hover{
   color: rgba(44, 44, 44, 0.823);
 }
-#nav-elements > div {
+.dropdown {
   display: flex;
   align-items: center;
   transition: scale 0.4s, color 0.4s;
+  
 }
 #nav-elements .redirect:hover {
   scale: 1.2;

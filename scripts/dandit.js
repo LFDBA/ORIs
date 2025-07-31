@@ -54,7 +54,7 @@ navs.forEach(nav => {
 
             drop.style.scale = 1.1
             drop.style.transform = "rotate(-90deg)"
-            nav.style.backgroundColor = "rgba(211, 211, 211, 1)"
+            nav.style.backgroundColor = "rgb(211, 211, 211)"
         
             if(nav.querySelector(".list")){
                 let list = nav.querySelector(".list")
