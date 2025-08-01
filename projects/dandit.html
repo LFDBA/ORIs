@@ -5,82 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/projects/dandit.css">
-    <script src="../scripts/dandit.js" defer></script>
+    <script src="../scripts/dandit.js"></script>
 </head>
 <body>
     <div id="cursor"></div>
-    <div>
-            <div id="title">
-                ORI's Art
-            </div>
-            <div id="nav">
-                
-                <div id="nav-elements">
-                    
-                    <div class="redirect" onclick="redirect('../index.html')">home</div>
-                    <div class="dropdown">
-                        <text>
-                            projects
-                            <div class="drop">
-                                >
-                            </div>
-                        </text>
-                        
-                        
-                        <table class="list">
-                            <tr>
-                                <th onclick="redirect('../projects/pokemon.html')">
-                                    Pokemon
-                                </th>
-                            </tr>
-                            <tr>
-                                <th onclick="redirect('../projects/dandit.html')">
-                                    Bata Dandit
-                                </th>
-                            </tr>
-                            <tr>
-                                <th onclick="redirect('../projects/undertale.html')">
-                                    Undertale
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="dropdown">
-                        <text>
-                            collections
-                            <div class="drop">
-                                >
-                            </div>
-                        </text>
-                        
-                        <table class="list">
-                            <tr>
-                                <th onclick="redirect('peace.html')">
-                                    peace
-                                </th>
-                            </tr>
-                            <tr>
-                                <th id="home">
-                                    &nbsp;liminal&nbsp;
-                                </th>
-                            </tr>
-                            <tr>
-                                <th onclick="redirect('nature.html')">
-                                    nature
-                                </th>
-                            </tr>
-                            <tr>
-                                <th onclick="redirect('spooks.html')">
-                                    spooks
-                                </th>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="redirect" onclick="redirect('../about.html')">about</div>
-                    <div class="redirect" onclick="redirect('../contact.html')">contact</div>
-                </div>
-                
-            </div>
+    <div id="title">
+        ORI's Art
+    </div>
+    <div id="nav">
+        
+        <div id="nav-elements">
+            
+            <div onclick="redirect('../index.html')">home</div>
+            <div onclick="popup(document.querySelectorAll('.popup')[0])">projects</div>
+            <div onclick="popup(document.querySelectorAll('.popup')[1])">collections</div>
+            <div onclick="redirect('../about.html')">about</div>
+            <div onclick="redirect('../contact.html')">contact</div>
         </div>
+        
+    </div>
+
+    
+    
+    <div id="popup-container">
+        <div class="popup hidden">
+
+        </div>
+        
+        <div class="popup hidden">
+
+        </div>
+    </div>
+    
 </body>
 </html>
