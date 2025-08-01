@@ -5,12 +5,13 @@ function redirect(location) {
 }
 
 
-function popup(element) {
-    
+function popup(elem, sib) {
+    let element = document.querySelectorAll('.popup')[elem]
+    let sibling = document.querySelectorAll('.popup')[sib]
     if(!element.classList.contains("hidden")){
         element.style.display = "none"
-    }else{
-        element.style.display = "block"
+    }else if(sibling.classList.contains("hidden")){
+        element.style.display = "flex"
     }
 
     element.classList.toggle("hidden")
@@ -19,17 +20,14 @@ function popup(element) {
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    console.log("ha")
     document.body.addEventListener("click", () => {
         let popups = document.querySelectorAll('.popup')
-        console.log(popups)
         popups.forEach(element => {
             if(clicking == false){
                 element.style.display = "none"
                 if(!element.classList.contains("hidden")){
                     element.classList.add("hidden")
                 }
-                console.log("hu")
             }
             
         });

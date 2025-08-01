@@ -144,6 +144,7 @@ th:hover {
   border-radius: 15px;
   background-color: aqua;
   display: none;
+  flex-direction: column;
 }
 
 
