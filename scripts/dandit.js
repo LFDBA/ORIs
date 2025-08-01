@@ -1,5 +1,6 @@
 let clicking = false
 
+
 function redirect(location) {
     window.location.href = location
 }
@@ -19,9 +20,19 @@ function popup(elem, sib) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    
+    let popups = document.querySelectorAll('.popup')
+
+    popups.forEach(element => {
+        element.addEventListener("click", () => {
+            clicking = true
+            console.log("b")
+        })
+    })
+
+
+
     document.body.addEventListener("click", () => {
-        let popups = document.querySelectorAll('.popup')
+        
         popups.forEach(element => {
             if(clicking == false){
                 element.style.display = "none"
