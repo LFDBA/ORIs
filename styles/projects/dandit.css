@@ -54,64 +54,8 @@ body {
   scale: 1.1;
 }
 
-.dropdown {
-  position: relative;
-  
-}
-
-
-.dropdown text {
-  display: flex;
-  transition: scale 0.4s;
-}
-
-.drop {
-  width: 60%;
-  position: absolute;
-  left: 85%;
-  scale: 0;
-  transform: rotate(-90deg);
-  transition: transform 0.4s, scale 0.4s;
-}
-
-
-.list {
-  display: flex;
-  position: absolute;
-  overflow: hidden;
-  color: rgba(0, 0, 0, 0.692);
-  border-collapse: collapse;
-  width: 115%;
-  border-radius: 0px 1vw 1vw 1vw;
-  top: 100%;
-  justify-content: center;
-  text-align: center;
-  background: rgb(216, 216, 216);
-  max-height: 0px;
-  overflow-y:hidden;
-  transition: max-height 0.8s;
-}
-
-
-
-tr {
-  border-bottom: 4px groove rgba(255, 255, 255, 0.2);
-}
-
-tr:last-child{
-  border: none;
-}
-
-th {
-    font-size: 1.3vw;
-    padding: 0.3vw;
-    font-weight: bold;
-    width: 1000px;
-    transition: scale 0.4s;
-    scale: 1;
-}
-th:hover {
-    scale: 1.15;
+table {
+  height: 100%;
 }
 
 #cursor {

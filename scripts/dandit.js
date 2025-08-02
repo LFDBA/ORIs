@@ -11,7 +11,11 @@ function popup(elem, sib) {
     let sibling = document.querySelectorAll('.popup')[sib]
     if(!element.classList.contains("hidden")){
         element.style.display = "none"
-    }else if(sibling.classList.contains("hidden")){
+    }else if(!sibling.classList.contains("hidden")){
+        sibling.style.display = "none"
+        sibling.classList.toggle("hidden")
+        element.style.display = "flex"
+    }else{
         element.style.display = "flex"
     }
 
@@ -25,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
     popups.forEach(element => {
         element.addEventListener("click", () => {
             clicking = true
-            console.log("b")
         })
     })
 
