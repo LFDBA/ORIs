@@ -56,7 +56,37 @@ body {
 
 table {
   height: 100%;
+  font-size: 2vw;
+  background-image: url("../../images/projects/dandit/border.png");
+  background-size: 100%;
+  padding: 10%;
 }
+th {
+  transition: scale 0.4s;
+}
+th:hover {
+  scale: 1.2;
+}
+
+#home {
+  position: relative; /* This is crucial for positioning children */
+  scale: 1 !important;
+}
+
+#home img {
+  position: absolute; /* Takes the image out of the normal document flow */
+  width: 35%; /* Adjust as needed */
+  height: 70%; /* Adjust as needed */
+  top: 15%;
+  left: 32.5%;
+}
+
+#home span {
+  z-index: 1; /* Puts the text above the image */
+}
+
+
+
 
 #cursor {
   position: fixed; /* Essential for following the mouse across the viewport */
@@ -86,7 +116,6 @@ table {
   width: 50vw;
   height: 50vh;
   border-radius: 15px;
-  background-color: aqua;
   display: none;
   flex-direction: column;
 }
