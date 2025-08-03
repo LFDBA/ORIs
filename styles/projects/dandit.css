@@ -1,15 +1,16 @@
 body {
     background-image: url(../../images/projects/dandit/bg_main.png);
-    background-size: auto 100%;
+    background-size: auto 100vh;
     image-rendering: pixelated;
-    background-position: center;
+    background-position: top;
     font-family: undertale;
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
@@ -25,9 +26,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: stretch;
-  width: 100%;
+  width: 100vw;
   height: 3vw;
-  background-color: rgba(31 30 30 0); /* Fully opaque */
   transition: background-color 0.5s;
   position: sticky;
   top: 0; 
@@ -88,18 +88,6 @@ th:hover {
 
 
 
-#cursor {
-  position: fixed; /* Essential for following the mouse across the viewport */
-  top: 0;
-  left: 0;
-  pointer-events: none; /* Crucial: Ensures your custom cursor doesn't block clicks on elements underneath it */
-  width: 100px;
-  height: 100px;
-  z-index: 2;
-
-  background-color: rgba(168, 166, 162, 0.06);
-  border-radius: 50%; /* For a circular cursor */
-}
 
 
 #popup-container {
@@ -110,6 +98,7 @@ th:hover {
   display: flex;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
+  position: absolute;
 }
 
 .popup {
@@ -118,8 +107,42 @@ th:hover {
   border-radius: 15px;
   display: none;
   flex-direction: column;
+  z-index: 1;
 }
 
+#cont-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(30, 255, 0);
+}
+
+#content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: aqua;
+}
+
+#info {
+  width: 100%;
+  height: 90%;
+  font-size: 2vw;
+  /* background-color: aqua; */
+}
+
+#images {
+  padding-top: 2vw;
+  
+}
+#images img {
+  margin: 0.5vw;
+  height: 5vw;
+}
 
 @font-face {
   font-family: undertale;
