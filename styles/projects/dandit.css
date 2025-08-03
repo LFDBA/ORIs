@@ -6,7 +6,6 @@ body {
     font-family: undertale;
     text-align: center;
     width: 100%;
-    height: 100%;
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -16,6 +15,7 @@ body {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
+    
 }
 
 #title {
@@ -58,7 +58,7 @@ table {
   height: 100%;
   font-size: 2vw;
   background-image: url("../../images/projects/dandit/border.png");
-  background-size: 100%;
+  background-size: 100% 100%;
   padding: 10%;
 }
 th {
@@ -91,14 +91,15 @@ th:hover {
 
 
 #popup-container {
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100%;
   display: flex;
   justify-content: center; /* Centers horizontally */
-  align-items: center; /* Centers vertically */
-  position: absolute;
+  align-items: center;    /* Centers vertically */
+  position: fixed;        /* Ensures it stays in place relative to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;       
 }
 
 .popup {
@@ -116,7 +117,6 @@ th:hover {
   justify-content: center;
   width: 90vw;
   padding-top: 10vw;
-  height: 100vh;
 }
 
 #content {
