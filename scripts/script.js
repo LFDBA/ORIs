@@ -2,6 +2,8 @@ const navs = document.querySelectorAll('#nav-elements div')
 const lists = document.querySelectorAll(".list")
 const userAgent = navigator.userAgent;
 const clickIcons = document.querySelectorAll(".imgContainer h2")
+let dropping = false
+
 clickIcons.forEach(icon => {
     if (/Mobi|Android/i.test(userAgent)) {
         
@@ -104,10 +106,11 @@ navs.forEach(nav => {
                 list.style.maxHeight = "0px"
                 nav.querySelector("text").style.scale = 1;
             }
+            dropping = false
         }
         
     })
-    let dropping = false
+    
     nav.addEventListener('click', () => {
         if(nav.querySelector(".list") && dropping == false){
             
