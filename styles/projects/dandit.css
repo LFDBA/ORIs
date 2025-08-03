@@ -31,7 +31,6 @@ body {
   position: sticky;
   top: 0; 
   z-index: 1;
-  padding-bottom: 0.4vw;
 }
 
 
@@ -99,7 +98,7 @@ th:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;       
+  z-index: -1;       
 }
 
 .popup {
@@ -116,7 +115,7 @@ th:hover {
   flex-direction: column;
   justify-content: center;
   width: 90vw;
-  padding-top: 10vw;
+  padding-top: 6vw;
 }
 
 #content {
@@ -130,7 +129,9 @@ th:hover {
 #info {
   width: 100%;
   font-size: 2vw;
-  /* background-color: aqua; */
+  background-image: url("../../images/projects/dandit/intro_txt.png");
+  background-size: 100% 100%;
+  padding: 2vw;
 }
 
 #images {

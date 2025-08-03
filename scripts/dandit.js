@@ -56,8 +56,8 @@ window.addEventListener("scroll", function () {
         document.querySelector("#nav").style.backgroundColor = `rgba(229, 229, 229, ${opacity})`;
         document.querySelector("#title").style.backgroundColor = `rgba(229, 229, 229, ${opacity})`;
     }else{
-        document.querySelector("#nav").style.backgroundColor = `rgba(229, 229, 229, 0.95)`;
-        document.querySelector("#title").style.backgroundColor = `rgba(229, 229, 229, 0.95)`;
+        document.querySelector("#nav").style.backgroundColor = `rgba(229, 229, 229, 0.98)`;
+        document.querySelector("#title").style.backgroundColor = `rgba(229, 229, 229, 0.98)`;
     }
     
 
