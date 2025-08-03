@@ -28,10 +28,10 @@ body {
   align-items: stretch;
   width: 100vw;
   height: 3vw;
-  transition: background-color 0.5s;
   position: sticky;
   top: 0; 
   z-index: 1;
+  padding-bottom: 0.4vw;
 }
 
 
@@ -114,34 +114,64 @@ th:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80vw;
-  height: 80vh;
-  background-color: rgb(30, 255, 0);
+  width: 90vw;
+  padding-top: 10vw;
+  height: 100vh;
 }
 
 #content {
-  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  background-color: aqua;
+  justify-content: safe center;
+  height: 100%;
 }
 
 #info {
   width: 100%;
-  height: 90%;
   font-size: 2vw;
   /* background-color: aqua; */
 }
 
 #images {
-  padding-top: 2vw;
-  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
-#images img {
-  margin: 0.5vw;
+
+#images h1 {
+  padding-top: 5vw;
+  font-size: 4vw;
+}
+
+#images div {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#dandit img {
+  /* This is the key part */
+  flex: 0 1 calc(25%); 
+  height: 13vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
+}
+
+#bg img { 
+  height: 15vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
+}
+
+#sign img {
+  /* This is the key part */
+  flex: 0 1 calc(33%); 
   height: 5vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
 }
 
 @font-face {
