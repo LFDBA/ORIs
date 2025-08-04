@@ -1,0 +1,180 @@
+body {
+    background-image: url(../../images/projects/dandit/bg_main.png);
+    background-size: auto 100vh;
+    image-rendering: pixelated;
+    background-position: top;
+    font-family: undertale;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    
+}
+
+#title {
+    font-size: 6vw;
+}
+
+#nav {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  width: 100vw;
+  height: 3vw;
+  position: sticky;
+  top: 0; 
+  z-index: 1;
+  padding-bottom: 0.4vw;
+}
+
+
+
+#nav-elements {
+  width: 70%;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: rgb(0, 0, 0);
+  
+}
+
+
+#nav-elements > div {
+  transition: scale 0.4s;
+}
+#nav-elements > div:hover {
+  scale: 1.1;
+}
+
+table {
+  height: 100%;
+  font-size: 2vw;
+  background-image: url("../../images/projects/dandit/border.png");
+  background-size: 100% 100%;
+  padding: 10%;
+}
+th {
+  transition: scale 0.4s;
+}
+th:hover {
+  scale: 1.2;
+}
+
+#home {
+  position: relative; /* This is crucial for positioning children */
+  scale: 1 !important;
+}
+
+#home img {
+  position: absolute; /* Takes the image out of the normal document flow */
+  width: 35%; /* Adjust as needed */
+  height: 70%; /* Adjust as needed */
+  top: 15%;
+  left: 32.5%;
+}
+
+#home span {
+  z-index: 1; /* Puts the text above the image */
+}
+
+
+
+
+
+
+#popup-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;    /* Centers vertically */
+  position: fixed;        /* Ensures it stays in place relative to viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;       
+}
+
+.popup {
+  width: 50vw;
+  height: 50vh;
+  border-radius: 15px;
+  display: none;
+  flex-direction: column;
+  z-index: 1;
+}
+
+#cont-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  padding-top: 10vw;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: safe center;
+  height: 100%;
+}
+
+#info {
+  width: 100%;
+  font-size: 2vw;
+  /* background-color: aqua; */
+}
+
+#images {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#images h1 {
+  padding-top: 5vw;
+  font-size: 4vw;
+}
+
+#images div {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#dandit img {
+  /* This is the key part */
+  flex: 0 1 calc(25%); 
+  height: 13vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
+}
+
+#bg img { 
+  height: 15vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
+}
+
+#sign img {
+  /* This is the key part */
+  flex: 0 1 calc(33%); 
+  height: 5vw;
+  box-sizing: border-box; /* Important for including padding/border in the width */
+  object-fit: contain;
+}
+
+@font-face {
+  font-family: undertale;
+  src: url(../../projects/fonts/undertale.ttf);
+}
