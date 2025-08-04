@@ -24,6 +24,13 @@ function popup(elem, sib) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+    let images = document.querySelectorAll("img")
+
+    images.forEach(image => {
+        image.style.transform = `rotate(${Math.random()*(10)-4}deg)`
+    })
+
+
     let popups = document.querySelectorAll('.popup')
 
     popups.forEach(element => {
