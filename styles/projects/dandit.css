@@ -129,7 +129,7 @@ th:hover {
 
 #info {
   width: 100%;
-  font-size: 2vw;
+  font-size: 40px;
   background-image: url("../../images/projects/dandit/intro_txt.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -186,12 +186,12 @@ th:hover {
   height: 13vw;
   
   /* This is the key part */
-  flex: 0 1 calc(25%); 
+  flex: 0 1 25%; 
   
   box-sizing: border-box; /* Important for including padding/border in the width */
   object-fit: contain;
   background-image: url("../../images/projects/dandit/paper.jpg");
-  box-shadow: 1px 1px 0.2vw 0.2vw rgb(77, 77, 77);
+  box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw rgb(77, 77, 77);
   margin: 1vw;
 }
 
@@ -235,4 +235,15 @@ th:hover {
 @font-face {
   font-family: undertale;
   src: url(../../projects/fonts/undertale.ttf);
+}
+
+
+@media (max-width: 120vh){
+  #info {
+    height: min-content;
+    overflow: hidden !important;
+    white-space:nowrap !important;
+    text-overflow: ellipsis !important;
+    font-size: 30px;
+  }
 }
