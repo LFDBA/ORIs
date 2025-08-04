@@ -156,6 +156,24 @@ th:hover {
   margin-top: 10vw;
 }
 
+#dandit > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13vw;
+  padding: 1vw;
+}
+
+#dandit > div > div {
+  background-image: url("../../images/projects/dandit/nail.png");
+  background-size: 100% 100%;
+  width: 1vw;
+  height: 1vw;
+  translate: 0% 150%;
+  position: absolute;
+  z-index: 1;
+}
+
 #dandit {
   background-image: url("../../images/projects/dandit/border.png");
   background-size: 100% 100%;

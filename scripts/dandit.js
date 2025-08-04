@@ -24,7 +24,7 @@ function popup(elem, sib) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    let images = document.querySelectorAll("img")
+    let images = document.querySelectorAll("#dandit > div")
 
     images.forEach(image => {
         image.style.transform = `rotate(${Math.random()*(10)-4}deg)`
