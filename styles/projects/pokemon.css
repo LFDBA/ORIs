@@ -1,4 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+@import url('https://fonts.googleapis.com/css2?family=Mozilla+Headline&display=swap');
+
 
 body {
     background-image: url(../../images/projects/dandit/bg_main.png);
@@ -17,8 +19,9 @@ body {
     -moz-user-select: none;
     -webkit-user-drag: none;
     overflow-x: hidden;
-    font-family: undertale, sans-serif;
+    font-family: sans-serif;
     line-height: 1;
+    font-family: "Mozilla Headline", sans-serif;
 }
 
 #title {
@@ -249,11 +252,4 @@ th:hover {
     text-overflow: ellipsis !important;
     font-size: 30px;
   }
-}
-
-
-
-@font-face {
-  font-family: undertale;
-  src: url(../../projects/fonts/undertale.ttf);
 }
