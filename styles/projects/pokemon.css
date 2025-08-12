@@ -3,25 +3,22 @@
 
 
 body {
-    background-image: url(../../images/projects/dandit/bg_main.png);
-    background-size: auto 100vh;
-    image-rendering: pixelated;
-    background-position: top;
-    text-align: center;
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    overflow-x: hidden;
-    font-family: sans-serif;
-    line-height: 1.2;
-    font-family: "Mozilla Headline", sans-serif;
+  background-color: rgb(255, 242, 66);
+  text-align: center;
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  line-height: 1.2;
+  font-family: "Mozilla Headline", sans-serif;
 }
 
 #title {
@@ -48,7 +45,7 @@ body {
 
 #nav-elements {
   width: 70%;
-  font-size: 3vw;
+  font-size: 2.7vw;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -67,7 +64,7 @@ body {
 table {
   height: 100%;
   font-size: 2vw;
-  background-image: url("../../images/projects/dandit/border.png");
+  background-image: url("../../images/projects/pokemon/border.png");
   background-size: 100% 100%;
   padding: 10%;
 }
@@ -140,11 +137,14 @@ th:hover {
 
 #info {
   width: 100%;
-  font-size: 40px;
-  background-image: url("../../images/projects/dandit/intro_txt.png");
+  font-size: 30px;
+  background-image: url("../../images/projects/pokemon/text.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  padding: 2vw;
+  padding: 5vw;
+  padding-top: calc(80px - 1vw);
+  padding-bottom: calc(80px - 1vw);
+
 }
 
 #images {
@@ -166,83 +166,6 @@ th:hover {
   justify-content: space-around;
   margin-top: 10vw;
 }
-
-#dandit > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 13vw;
-  padding: 1vw;
-}
-
-#dandit > div > div {
-  background-image: url("../../images/projects/dandit/nail.png");
-  background-size: 100% 100%;
-  width: 1vw;
-  height: 1vw;
-  translate: 0% 150%;
-  position: absolute;
-  z-index: 1;
-}
-
-#dandit {
-  background-image: url("../../images/projects/dandit/border.png");
-  background-size: 100% 100%;
-  padding: 7vw;
-  padding-bottom: 10vw;
-}
-
-#dandit img {
-  
-  height: 13vw;
-  
-  /* This is the key part */
-  flex: 0 1 25%; 
-  
-  box-sizing: border-box; /* Important for including padding/border in the width */
-  object-fit: contain;
-  background-image: url("../../images/projects/dandit/paper.jpg");
-  box-shadow: 0.1vw 0.1vw 0.2vw 0.1vw rgb(77, 77, 77);
-  margin: 1vw;
-}
-
-#bg {
-  background-image: url("../../images/projects/dandit/border.png");
-  background-size: 100% 100%;
-  padding: 10vw;
-  padding-bottom: 13vw;
-  flex-direction: column !important;
-}
-
-#bg img { 
-  
-  height: 18vw;
-  padding: 0.3vw;
-  
-  object-fit: contain;
-  background-color: rgb(163, 163, 163);
-  box-shadow: 0px 0px 0.2vw 0.2vw rgb(77, 77, 77);
-  margin: 1vw;
-}
-
-
-#sign {
-  background-image: url("../../images/projects/dandit/border.png");
-  background-size: 100% 100%;
-  padding: 7vw;
-}
-
-
-#sign img {
-  height: 5vw;
-  padding: 0.2vw;
-  box-sizing: border-box; /* Important for including padding/border in the width */
-  object-fit: contain;
-  background-color: rgb(163, 163, 163);
-  box-shadow: 0px 0px 0.2vw 0.2vw rgb(77, 77, 77);
-  margin: 1vw;
-}
-
 
 
 @media (max-width: 120vh){

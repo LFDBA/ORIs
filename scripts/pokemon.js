@@ -60,11 +60,11 @@ window.addEventListener("scroll", function () {
     let scrollTop = window.scrollY;
     let opacity = Math.max(0, scrollTop / 300);
     if(opacity < 1){
-        document.querySelector("#nav").style.backgroundColor = `rgba(229, 229, 229, ${opacity})`;
-        document.querySelector("#title").style.backgroundColor = `rgba(229, 229, 229, ${opacity})`;
+        document.querySelector("#nav").style.backgroundColor = `rgba(250, 250, 250, ${opacity})`;
+        document.querySelector("#title").style.backgroundColor = `rgba(250, 250, 250, ${opacity})`;
     }else{
-        document.querySelector("#nav").style.backgroundColor = `rgba(229, 229, 229, 0.98)`;
-        document.querySelector("#title").style.backgroundColor = `rgba(229, 229, 229, 0.98)`;
+        document.querySelector("#nav").style.backgroundColor = `rgba(250, 250, 250, 0.98)`;
+        document.querySelector("#title").style.backgroundColor = `rgba(229, 250, 250, 0.98)`;
     }
     
 
