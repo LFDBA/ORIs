@@ -109,7 +109,8 @@ th:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2;       
+  pointer-events: none;
+  z-index: 2;  
 }
 
 .popup {
@@ -118,7 +119,6 @@ th:hover {
   border-radius: 15px;
   display: none;
   flex-direction: column;
-  z-index: 1;
 }
 
 #cont-container {
