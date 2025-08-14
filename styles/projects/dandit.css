@@ -15,7 +15,7 @@ body {
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
-    
+    overflow-x: hidden;
 }
 
 #title {
